@@ -481,9 +481,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Tuned by Sam Pinches 18th March 2019, on A5S at 220C.
-#define DEFAULT_Kp 32.73
+  //#define DEFAULT_Kp 32.73
+  //#define DEFAULT_Ki 3.68
+  //#define DEFAULT_Kd 72.83
+
+  //Tuned by ishtob 9th Feb 2020 on A5S at 240C.
+#define DEFAULT_Kp 35.95
 #define DEFAULT_Ki 3.68
-#define DEFAULT_Kd 72.83
+#define DEFAULT_Kd 87.89
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -534,9 +539,14 @@
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
   // Tuned by Sam Pinches on A5S at 75C (18th March, 2019)
-  #define DEFAULT_bedKp 175.83
-  #define DEFAULT_bedKi 28.85
-  #define DEFAULT_bedKd 267.90
+  //#define DEFAULT_bedKp 175.83
+  //#define DEFAULT_bedKi 28.85
+  //#define DEFAULT_bedKd 267.90
+
+  //Tuned by ishtob 29th January 2020 on A5S at 60C
+#define DEFAULT_bedKp 87.50
+#define DEFAULT_bedKi 16.29
+#define DEFAULT_bedKd 313.27
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -1666,13 +1676,13 @@
 // This option overrides the default number of encoder pulses needed to
 // produce one step. Should be increased for high-resolution encoders.
 //
-#define ENCODER_PULSES_PER_STEP 1
+//#define ENCODER_PULSES_PER_STEP 1
 
 //
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
 //
-#define ENCODER_STEPS_PER_MENU_ITEM 1
+//#define ENCODER_STEPS_PER_MENU_ITEM 1
 
 /**
  * Encoder Direction Options
